@@ -13,6 +13,10 @@
   .w3-sidebar {
     width: 120px;
   }
+  #home{
+
+    position:relative;
+  }
 
   /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
   #main {margin-left: 120px}
@@ -237,14 +241,19 @@
 <script type="text/javascript">
   $(document).ready(function(){
     var altura = $("#home").height();
-    console.log(altura)
-
+    var desplazamiento=0;
+    alert("SAMY MONGOLA")
     $(window).scroll(function(){
-      console.log($(window).scrollTop() )
-
       if($(window).scrollTop() >= altura) {
-        alert("paso el home");
+        if(desplazamiento>$(window).scrollTop()){
+          $("#home").animate({"left": "-=150px"}, "fast");
+        }
+        else {
+          $("#home").animate({"left": "+=150px"}, "fast");
+        }
       }
+
+      desplazamiento=$(window).scrollTop();
 
     });
   });
