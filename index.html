@@ -6,28 +6,10 @@
 <link rel="stylesheet" href="public/css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="public/bower_components/components-font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="public/css/site.css">
 
 <link rel="shortcut icon" type="image/png" href="public/image/logos/favicon.png"/>
-<style>
-  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-row-padding img {margin-bottom: 12px}
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {
-    width: 120px;
-  }
-  #perfil:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
 
-
-
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 120px}
-  /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
 <body class="w3-light-gray ">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -282,24 +264,7 @@
   <!-- END PAGE CONTENT -->
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-  $(function(){
-    var home = $('#home');
-    document.getElementById('video').contentWindow.playVid();
+<script src="public/js/site.js"></script>
 
-    var acerca = $('#about')
-    var precios = $('#precios')
-    $(window).scroll(function(){
-      if($(this).scrollTop()==0)
-      {
-        home.fadeIn(1000)
-      }
-      if($(this).scrollTop()>=(home.height())){
-        home.fadeOut(3000);
-      }
-
-    });
-  });
-</script>
 </body>
 </html>
