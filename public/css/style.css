@@ -73,3 +73,27 @@ nav {
 .arriba{
     right: 6em;
 }
+
+@media screen and (max-width: 700px){
+    .contenido{
+        font-size:1px;
+    }
+    .titulo{
+        font-size:1px;
+    }
+    .nombre{
+        font-size: 1em;
+    }
+    .descripcion{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+
+    .nombre{
+        display: none;
+    }
+    .descripcion{
+        font-size: 10px;
+    }
+}
