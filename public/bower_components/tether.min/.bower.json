@@ -1,0 +1,13 @@
+{
+  "name": "tether.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"5b57-15434142c90\"",
+    "Content-Type": "application/javascript"
+  },
+  "_release": "e-tag:W/\"5b57-15",
+  "main": "index.js",
+  "_source": "https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js",
+  "_target": "*",
+  "_originalSource": "https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js",
+  "_direct": true
+}

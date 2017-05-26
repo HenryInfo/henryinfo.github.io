@@ -1,268 +1,257 @@
 <!DOCTYPE html>
-<html>
-<title>Henry Bravo</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="public/css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="public/bower_components/components-font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="public/css/site.css">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Henry Bravo</title>
+  <link rel="shortcut icon" type="image/png" href="public/image/logos/favicon.png"/>
 
-<link rel="shortcut icon" type="image/png" href="public/image/logos/favicon.png"/>
 
-<body class="w3-light-gray ">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="public/bower_components/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo"><img src="public/image/logos/favicon.png" width="50" style="margin-top: .3em"></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#contacto">Contaco</a></li>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-card-2  w3-text-teal">
-  <!-- Avatar image in top left corner -->
-  <img src="public/image/perfil.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large  w3-hover-green">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>INICIO</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ACERCA</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PORTAFOLIO</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACTO</p>
-  </a>
+    </ul>
+
+
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Inicio</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ACERCA</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PORTAFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center  blue-text darken-2">< Henry Bravo /></h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text ">Revolucionando con lo nuevo en tecnología</h5>
+      </div>
+      <div class="row center">
+        <a href="#contacto" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Contactar</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax"><img src="public/image/perfil.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container ">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+          <h5 class="center">Speeds up development</h5>
+
+          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">User Experience Focused</h5>
+
+          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+          <h5 class="center">Easy to work with</h5>
+
+          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- Page Content -->
-<div class=" w3-padding-large" id="main">
-  <!--secction fondo-->
-  <section class="w3-card-4 w3-white" >
-    <section class="w3-card-4 w3-white" style="margin-left: 0.2em">
-      <section class="w3-card-4 w3-white" style="margin-left: 0.2em; "  id="acerca">
-        <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-white w3-text-blue-gray w3-card-4" id="home" style="margin-left: 0.2em;">
-          <h1 class="w3-jumbo"><span class="w3-hide-small"> < Henry Bravo<span class="w3-hide-small"> /></span> </h1>
-          <p>Programador & Director de Proyectos</p>
-          <div  >
-            <img src="public/image/perfil.png" id="perfil" alt="boy" class="w3-circle" width="100" height="100">
 
-          </div>
-        </header>
-
-        <!-- About Section -->
-        <div class="w3-content w3-justify w3-text-blue-gray w3-padding-64 " id="about">
-          <h2 class="w3-text-blue-gray">Henry Yerry Bravo Sánchez_</h2>
-          <hr style="width:200px" class="w3-opacity">
-          <p>
-            Estudiante_ de Ingeniería de Sistemas de la Universidad Nacional Cajamarca. Con habilidades en desarrollo de aplicaciones de escritorio, web y móbil. Con
-            las últimas tendencias con Frameworks en php, Geolocailización en Android. .Net, Php con Sql Server/MySql.
-            Incursionando en la tendecia de Metodolgías Ágiles tanto Scrum como Xtreme Programing. Con el apoyo de Git, con repositorios en GitHub y BitBucket.
-          </p>
-          <p>
-            Estudios de un año de pregrado en la Universidad de Burgos, España. Cursos como: Ingeniería de Software, Desarrollo y Mantenimiento de Software Inteligencia Artificial, Gestión de Proyectos, Programación Avanzada de Sistemas Operativos.
-
-          </p>
-
-          <h3 class="w3-padding-16 w3-text-blue-gray">Mis habilidades</h3>
-          <p class="w3-wide">Programador Android</p>
-          <div class="w3-white">
-            <div class="w3-blue" style="height:12px;width:40%"></div>
-          </div>
-          <p class="w3-wide">Programador Web</p>
-          <div class="w3-white">
-            <div class="w3-blue" style="height:12px;width:70%"></div>
-          </div>
-          <p class="w3-wide">Director de Proyectos</p>
-          <div class="w3-white">
-            <div class="w3-blue" style="height:12px;width:30%"></div>
-          </div><br>
-
-          <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">10+</span><br>
-              Proyectos acabados
-            </div>
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">15+</span><br>
-              Clientes felices
-            </div>
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">150+</span><br>
-              Reuniones
-            </div>
-          </div>
-          <!--
-          <button class="w3-button w3-light-grey w3-padding-large w3-section">
-            <i class="fa fa-download"></i> Download Resume
-          </button>
-          -->
-          <!-- Grid for pricing tables -->
-          <div id="precios">
-            <h3 class="w3-padding-16 w3-text-blue-gray" >Mis Precios</h3>
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-col m4 w3-margin-bottom">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Desarrollo Web</li>
-                  <li class="w3-padding-16">Diseño responsive</li>
-                  <li class="w3-padding-16">Diseño de Procesos</li>
-                  <li class="w3-padding-16">Redes Sociales</li>
-                  <li class="w3-padding-16">Correo a Clientes</li>
-                  <li class="w3-padding-16">
-                    <h2>s/. 1000</h2>
-                    <span class="w3-opacity">* Depende de la cantidad de procesos</span>
-                  </li>
-                  <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large w3-hover-black">Elegir</button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="w3-col m4">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Desarrollo Escritorio</li>
-                  <li class="w3-padding-16">Diseño de Procesos</li>
-                  <li class="w3-padding-16">Conexión a Base de datos</li>
-                  <li class="w3-padding-16">Impresiones Excel, Word, PDF...</li>
-                  <li class="w3-padding-16">Soporte</li>
-                  <li class="w3-padding-16">
-                    <h2>S/. 1000</h2>
-                    <span class="w3-opacity">* Depende de la cantidad de procesos</span>
-                  </li>
-                  <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large w3-hover-black">Elegir </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="w3-col m4">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Desarrollo Móvil</li>
-                  <li class="w3-padding-16">Diseño de Procesos</li>
-                  <li class="w3-padding-16">Registro de Clientes</li>
-                  <li class="w3-padding-16">Notificaciones</li>
-                  <li class="w3-padding-16">Soporte</li>
-                  <li class="w3-padding-16">
-                    <h2>S/. 3000</h2>
-                    <span class="w3-opacity">* Depende de la cantidad de procesos</span>
-                  </li>
-                  <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large w3-hover-black">Elegir </button>
-                  </li>
-                </ul>
-              </div>
-          </div>
-
-            <!-- End Grid/Pricing tables -->
-          </div>
-
-          <!-- Testimonials -->
-          <h3 class="w3-padding-24 w3-text-blue-gray">Mis Testimonios</h3>
-          <img src="public/image/logos/didepti.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-          <p><span class="w3-large w3-margin-right">Didepti</span> Ingeniero de Aplicaciones</p>
-          <p>Desarrollo y mantenimiento de aplicaciones en Zend Framework</p><br>
-
-          <img src="public/image/logos/apt.ico" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px; height: 80px">
-          <p><span class="w3-large w3-margin-right">Cooperativa APT</span> Desarrollo de apliación</p>
-          <p>Desarrollo de aplicación para gestión de Créditos</p>
-          <!-- End About Section -->
-        </div>
-
-
-      </section>
-
-
-      <!-- Portfolio Section -->
-      <div class="w3-padding-64 w3-content" id="photos">
-        <h2 class="w3-text-blue-gray">Mi portafolio</h2>
-        <hr style="width:200px" class="w3-opacity">
-
-        <!-- Grid for photos -->
-        <div class="w3-row-padding" style="margin:0 -16px">
-          <div class="w3-half">
-            <img src="public/image/background1.jpg" style="width:100%">
-            <img src="public/image/background2.jpg" style="width:100%">
-            <img src="public/image/background3.jpg" style="width:100%">
-          </div>
-
-          <div class="w3-half">
-            <img src="public/image/background1.jpg" style="width:100%">
-            <img src="public/image/background2.jpg" style="width:100%">
-            <img src="public/image/background3.jpg" style="width:100%">
-          </div>
-          <!-- End photo grid -->
-        </div>
-        <!-- End Portfolio Section -->
+<div class="parallax-container valign-wrapper" >
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center"  >
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
       </div>
-
-      <!-- Contact Section -->
-
-      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-blue-gray">Contáctame</h2>
-        <div class="w3-col m6">
-          <hr style="width:200px" class="w3-opacity">
-
-          <div class="w3-section">
-            <p><i class="fa fa-map-marker fa-fw w3-text-teal w3-xxlarge w3-margin-right"></i> Jr Progreso 746, Cajamrca</p>
-            <p><i class="fa fa-phone fa-fw w3-text-teal w3-xxlarge w3-margin-right"></i> Celular: +51 973772738</p>
-            <p>
-              <a href="mailto:hbravos.info@mail.com?Subject=Homa%20de%20Nuevo" target="_top">
-                <i class="fa fa-envelope fa-fw w3-text-teal w3-xxlarge w3-margin-right"> </i> Email: hbravos.info@mail.com
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="w3-col m6">
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YlmG4_jauSE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-          </iframe>
-        </div>
-        <br>
-        <p>O dejame un menaje, pronto responderé:</p>
-
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Correo" required name="Email"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Subject"></p>
-          <p><textarea class="w3-input w3-padding-16"  rows="10" placeholder="Mensaje" required name="Message"></textarea></p>
-          <p>
-            <button class="w3-button w3-teal w3-padding-large" type="submit">
-              <i class="fa fa-paper-plane"></i> Enviar Mensaje
-            </button>
-          </p>
-        </form>
-        <!-- End Contact Section -->
-      </div>
-    </section>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://www.fb.com/henry.info" target="_blank" class="w3-hover-text-green"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Desarrollado con el <i class="fa w3-text-red fa-heart"></i> por <a href="https://www.fb.com/henry.info" target="_blank" class="w3-hover-text-green">Henry Bravo</a></p>
-    <!-- End footer -->
-  </footer>
-
-  <!-- END PAGE CONTENT -->
+    </div>
+  </div>
+  <div class="parallax"><img src="public/image/perfil.jpg" alt="Unsplashed background img 2"></div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="public/js/site.js"></script>
 
+<div class="container contacto" id="contacto">
+  <div class="section">
+
+    <div class="row" >
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Contacto</h4>
+        <p class="left-align light center">
+          Si necesitas más información dejame tu mensaje, o consulta en mis datos personales.
+
+        </p>
+        <div class="row">
+          <form class="col s12  blue-text darken-2">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Nombres</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telefono</label>
+              </div>
+
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="icon_email" type="email" class="validate">
+                <label for="icon_email">Correo</label>
+              </div>
+
+              <div class="input-field col s6">
+                <i class="material-icons prefix">subject</i>
+                <input id="icon_subjet" type="text" class="validate">
+                <label for="icon_subjet">Asunto</label>
+              </div>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">textsms</i>
+                <textarea id="icon_mensaje" type="text" class="materialize-textarea validate"></textarea>
+                <label for="icon_mensaje">Mensaje</label>
+              </div>
+
+            </div>
+          </form>
+          <h4 class="left-align light center">
+            Datos en Cajamarca, Perú
+          </h4>
+          <div class="col s12">
+            <div id="map" class="col s8"> </div>
+            <div  class="col s4">
+              <div class="col s6">
+                <i class="material-icons prefix right">phone</i>
+              </div>
+              <div class="col s6">
+                <h6>+51 973 772 738</h6>
+              </div>
+              <div class="col s6">
+                <i class="material-icons prefix right">location_on</i>
+              </div>
+              <div class="col s6">
+                <h6>Jr Progreso 746</h6>
+              </div>
+              <div class="col s6">
+                <i class="material-icons prefix right">email</i>
+              </div>
+              <div class="col s6">
+                <h6>hbravos.info arroba gmail punto com</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="public/image/perfil.jpg" alt="Unsplashed background img 3"></div>
+</div>
+
+<footer class="page-footer blue">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">¿Quien soy?</h5>
+        <p class="grey-text text-lighten-4">
+          Soy un estudiante de Ingeniería de Sistemas de la Universidad de Cajamarca, Perú.
+        </p>
+        <p class="grey-text text-lighten-4">
+          Con una pasentía en la Universidad de Burgos, España. Especializandome en Desarrollo de Software.
+        </p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Links de Interes</h5>
+        <ul>
+          <li><a class="white-text" href="http://www.unc.edu.pe" target="_blank">Universidad Nacional de Cajamarca</a></li>
+          <li><a class="white-text" href="http://www.ubu.es" target="_blank">Universidad de Burgos</a></li>
+          <li><a class="white-text" href="http://www.didepti.com" target="_blank">Didepti</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="http://facebook.com/henry.info">Facebook</a></li>
+          <li><a class="white-text" href="#!">Youtube</a></li>
+          <li><a class="white-text" href="#!">GitHub</a></li>
+          <li><a class="white-text" href="#!">BitBucket</a></li>
+          <li><a class="white-text" href="#!">Likendin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Hecho con <a class="brown-text text-lighten-3" href="http://facebook.com/henry.info">Henry Bravo</a>
+    </div>
+  </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="public/bower_components/materialize/dist/js/materialize.js"></script>
+<script src="public/js/init.js"></script>
+<script>
+  function initMap() {
+    var pt = new google.maps.LatLng(-7.1647337, -78.5056142);
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: pt
+    });
+    var marker = new google.maps.Marker({
+      position: pt,
+      icon: "public/image/perfil.png",
+      map: map
+    });
+    map.setCenter(pt);
+    map.setZoom(16);
+
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl3Swzzfsf9vbC-DmPLA8ED-x62qmzdUM&callback=initMap">
+</script>
 </body>
 </html>

@@ -2,6 +2,8 @@
  * Created by hbs on 24/05/17.
  */
 $(function(){
+
+
     var home = $('#home');
 
     var acerca = $('#about')
@@ -16,4 +18,6 @@ $(function(){
         }
 
     });
+
 });
+
