@@ -6,6 +6,24 @@
  * Made By MaterializeCSS.com
  */
 
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1976d2;
+}
+
+::-webkit-scrollbar-track {
+    background: #6c91ff;
+}
+
+body {
+    scrollbar-face-color: slategray;
+    scrollbar-track-color: #b8c0c8;
+}
+
 nav ul a,
 nav .brand-logo {
     color: #444;
