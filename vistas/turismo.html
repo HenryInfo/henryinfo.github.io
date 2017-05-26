@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../public/css/w3.css">
+
 <link rel="stylesheet" href="../public/bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../public/bower_components/materialize/dist/css/materialize.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="../public/bower_components/components-font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="../public/css/site.css">
 <link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 <link rel="shortcut icon" type="image/png" href="../public/image/logos/favicon.png"/>
 <body>
@@ -18,22 +20,24 @@
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"><img src="../public/image/logos/favicon.png" width="50"></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="../index.html#">Inicio</a></li>
+            <li><a href="../#">Inicio</a></li>
             <li><a href="../index.html#contacto">Contaco</a></li>
+            <li><a href="#!" id="redes">Redes</a></li>
             <li><a href="../vistas/turismo.html">Turismo</a></li>
             <li><a href="https://github.com/HenryInfo/henryinfo.github.io" target="_blank">Ver código <i class="fa fa-github" aria-hidden="true"></i></a></li>
-
         </ul>
-
-
-
         <ul id="nav-mobile" class="side-nav">
             <li><a href="#">Inicio</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-
+    <div class="nav-content">
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue pulse" href="#modal2">
+            <i class="material-icons">send</i>
+        </a>
+    </div>
 </nav>
+
 <div class=" w3-padding-large"  id="main">
     <div class="slider">
         <ul class="slides">
@@ -113,45 +117,94 @@
 
 
     </div>
-    <!--
-    <div class="share fixed" >
-        <div class="col-md-12">
-            <div class="ui-button col-md-4">
-                <div class="ui-click">|||</div>
-                <div class="ui-state">
-                    <span class="ui-on">ON</span>
-                    <span class="ui-off">OFF</span>
-                </div>
+
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large green" id="compartir">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </a>
+    <ul>
+        <li><a class="btn-floating blue lighten-1" href="https://bitbucket.org/henryyerry/" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
+        <li><a class="btn-floating black darken-1" href="https://github.com/HenryInfo" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+        <li><a class="btn-floating green" href="https://www.linkedin.com/in/henry-bravo-s%C3%A1nchez-943920a4/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a class="btn-floating blue" href="http://facebook.com/henry.info" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+<div class="tap-target green" data-activates="compartir">
+    <div class="tap-target-content  white-text">
+        <h5>Redes Sociales</h5>
+        <p>Al pasar por este botón se mostrarán mis redes sociales, para estar más conectados que nunca</p>
+    </div>
+</div>
+
+<div class="fixed-action-btn arriba tooltipped" data-position="left" data-delay="50" data-tooltip="Subir arriba">
+    <a class="btn-floating btn-large green" href="#">
+        <i class="fa fa-chevron-circle-up" aria-hidden="true" ></i>
+    </a>
+</div>
+<footer class="page-footer blue">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">¿Quien soy?</h5>
+                <p class="grey-text text-lighten-4">
+                    Soy un estudiante de Ingeniería de Sistemas de la Universidad de Cajamarca, Perú.
+                </p>
+                <p class="grey-text text-lighten-4">
+                    Con una pasentía en la Universidad de Burgos, España. Especializandome en Desarrollo de Software.
+                </p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Links de Interes</h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.unc.edu.pe" target="_blank">Universidad Nacional de Cajamarca</a></li>
+                    <li><a class="white-text" href="http://www.ubu.es" target="_blank">Universidad de Burgos</a></li>
+                    <li><a class="white-text" href="http://www.didepti.com" target="_blank">Didepti</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">En redes</h5>
+                <ul>
+                    <li><a class="white-text" href="http://facebook.com/henry.info" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+                    <li><a class="white-text" href="https://github.com/HenryInfo" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a class="white-text" href="https://bitbucket.org/henryyerry/" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i> BitBucket</a></li>
+                    <li><a class="white-text" href="https://www.linkedin.com/in/henry-bravo-s%C3%A1nchez-943920a4/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> Likendin</a></li>
+                </ul>
             </div>
         </div>
-       <div class="row col-md-12 share" s="2">
-           <ul class="col-md-1 compartir">
-               <li>
-                   <a onclick="ga('send', 'social', 'Twitter', 'Share', '#');" target="_blank" href="#" title="Compartir en Twitter">
-                       <img width="23" height="23" class="mr-10" src="https://www.yunbitsoftware.com/blog/wp-content/themes/YunbitBlog/img/ico_rrss_foot_twitter.png" alt="" data-pin-nopin="true">
-                   </a>
-               </li>
-               <li>
-                   <a onclick="ga('send', 'social', 'Facebook', 'Share', '#');" target="_blank" href="#" title="Compartir en Facebook">
-                       <img width="23" height="23" class="mr-10" src="https://www.yunbitsoftware.com/blog/wp-content/themes/YunbitBlog/img/ico_rrss_foot_facebook.png" alt="" data-pin-nopin="true">
-                   </a>
-               </li>
-               <li>
-                   <a onclick="ga('send', 'social', 'LinkedIn', 'Share', '#');" target="_blank" href="#" title="Compartir en LinkedIn">
-                       <img width="23" height="23" class="mr-10" src="https://www.yunbitsoftware.com/blog/wp-content/themes/YunbitBlog/img/ico_rrss_foot_linkdin.png" alt="">
-                   </a>
-               </li>
-           </ul>
-           <h1 class="col-md-11">Turismo Cajamarca</h1>
-
-       </div>
     </div>
--->
+    <div class="footer-copyright">
+        <div class="container">
+            Hecho con el   <i class="red-text fa fa-heart" aria-hidden="true"></i><a class="white-text" href="http://facebook.com/henry.info"> por Henry Bravo</a>
+        </div>
+    </div>
+</footer>
+<!--Modal -->
+<div id="modal2" class="row modal bottom-sheet">
+    <div class="modal-content">
+        <p>Dejanos que piensas de la página, en qué puedo mejorar, o que debo quitar, ¡eres de gran ayuda!</p>
+        <div class="input-field col s10" style="margin: 2em">
+            <i class="material-icons prefix">textsms</i>
+            <input id="icon_retro" type="text" class="materialize-textarea validate">
+            <label for="icon_retro">Mensaje</label>
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <a href="#!" id="enviarRetro" class="red white-text modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+    </div>
 </div>
+<!--Fin modal -->
+
+
+
+
 <script src="../public/bower_components/tether/dist/js/tether.min.js"></script>
 <script src="../public/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../public/bower_components/materialize/dist/js/materialize.min.js"></script>
+
 <script src="../public/js/siteMaterial.js"></script>
 
 </body>
