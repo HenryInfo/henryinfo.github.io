@@ -115,3 +115,7 @@ nav {
         font-size: 10px;
     }
 }
+
+.parallax img{
+    filter:brightness(0.8);
+}
