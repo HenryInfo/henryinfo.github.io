@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('.modal').modal();
     ;
     $('.parallax').parallax();
-    $("#redes").click(function () {
+    $(".redes").click(function () {
         $('.tap-target').tapTarget('open');
     })
     $("#enviarRetro").click(function () {
