@@ -120,3 +120,6 @@ nav {
 .parallax img{
     filter:brightness(0.8);
 }
+.w3-third{
+    padding: 1em;
+}
