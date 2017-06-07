@@ -123,3 +123,22 @@ nav {
 .w3-third{
     padding: 1em;
 }
+/* Imagen del logo */
+#logo-container img {
+    margin-top: .1em;
+    width: 2em;
+
+}
+
+/*Modal*/
+.input-field{
+    margin: 2em
+}
+
+/*TURISMO*/
+#main {
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+

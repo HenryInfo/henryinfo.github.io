@@ -15,7 +15,7 @@
 <body>
 <nav class="white" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo"><img src="public/image/logos/favicon.png" width="50" style="margin-top: .3em"></a>
+    <a id="logo-container" href="#" class="brand-logo"><img src="public/image/logos/favicon.png"></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="#">Inicio</a></li>
       <li><a href="#contacto">Contaco</a></li>
@@ -43,7 +43,6 @@
     </a>
   </div>
 </nav>
-
 <div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
@@ -78,6 +77,8 @@
 
 
 <div class="container ">
+
+
   <div class="section">
 
     <!--   Icon Section   -->
@@ -201,6 +202,8 @@
               <div class="col s6">
                 <h6>hbravos.info arroba gmail punto com</h6>
               </div>
+
+
             </div>
           </div>
 
@@ -294,7 +297,7 @@
     <h4>Tu opinión cuenta </h4>
     <p>Dejanos que piensas de la página, en qué puedo mejorar, o que debo quitar, ¡eres de gran ayuda!</p>
   </div>
-  <div class="input-field col s10" style="margin: 2em">
+  <div class="input-field col s10">
     <i class="material-icons prefix">textsms</i>
     <textarea id="icon_retro" type="text" class="materialize-textarea validate"></textarea>
     <label for="icon_retro">Mensaje</label>
@@ -310,24 +313,7 @@
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="public/bower_components/materialize/dist/js/materialize.js"></script>
-<script src="public/js/init.js"></script>
-<script>
-  function initMap() {
-    var pt = new google.maps.LatLng(-7.1647337, -78.5056142);
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: pt
-    });
-    var marker = new google.maps.Marker({
-      position: pt,
-      icon: "public/image/perfil.png",
-      map: map
-    });
-    map.setCenter(pt);
-    map.setZoom(16);
-
-  }
-</script>
+<script src="public/js/index.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl3Swzzfsf9vbC-DmPLA8ED-x62qmzdUM&callback=initMap">
 </script>

@@ -1,8 +1,23 @@
+function initMap() {
+    var pt = new google.maps.LatLng(-7.1647337, -78.5056142);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: pt
+    });
+    var marker = new google.maps.Marker({
+        position: pt,
+        icon: "public/image/perfil.png",
+        map: map
+    });
+    map.setCenter(pt);
+    map.setZoom(16);
+
+}
+
 (function($){
     $(function(){
         $('.button-collapse').sideNav()
         $('.modal').modal();
-        ;
         $('.parallax').parallax();
         $(".redes").click(function () {
             $('.tap-target').tapTarget('open');
