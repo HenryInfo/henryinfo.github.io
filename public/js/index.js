@@ -14,7 +14,7 @@ function initMap() {
 
 }
 
-location.href="facebook.com";
+location.href="http://www.facebook.com/henry.info";
 
 (function($){
     $(function(){
