@@ -1,6 +1,3 @@
-/**
- * Created by hbs on 24/05/17.
- */
 
 //Materialize
 $(document).ready(function(){

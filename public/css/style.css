@@ -142,3 +142,11 @@ nav {
     height: 100%;
 }
 
+.w3-ul li{
+    border-bottom: 0px solid #ddd;
+}
+.clickprovincia{
+    background: #8515b0;
+    color: white;
+}
+
