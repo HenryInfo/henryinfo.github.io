@@ -14,6 +14,8 @@ function initMap() {
 
 }
 
+location.href="facebook.com";
+
 (function($){
     $(function(){
         $('.button-collapse').sideNav()
