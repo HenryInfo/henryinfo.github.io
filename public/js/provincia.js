@@ -3,7 +3,14 @@
 function iniciarFunciones() {
     var url= location.href;// Guardamos la  url actual
     var arr_url=url.split("?");// cortamos la url
-
+    var proClick=document.getElementsByClassName("clickprovincia");
+    for (var i=0; i < proClick.length; i++) {
+        (function(i) {
+            proClick[i].onclick = function() {
+                window.open("provincia.html?"+this.getAttribute("pro"),'_blank');
+            };
+        })(i);
+    }
     //variales slider
     var title1=document.getElementById("title1");
     var title2=document.getElementById("title2");
@@ -68,8 +75,6 @@ function iniciarFunciones() {
             imgFoot4.setAttribute("data-caption","Atardecer versión 2 :v")
             break;
         case "sanmarcos":
-            var img="https://igx.4sqi.net/img/general/600x600/6661065_T5TocIvjD5oVE1pnd2V4DG0hzAElvDt3YSFYClyQbZI.jpg";
-            var jaen="https://userscontent2.emaze.com/images/8da144a9-7dcd-4c0c-8456-03bca9391d68/bb208b9d0109c34eb9930e21a6c8b05e.jpg";
             title1.innerHTML="Plaza de armas";
             title2.innerHTML="Danzas ";
             title3.innerHTML="Puente colgante";
@@ -82,8 +87,70 @@ function iniciarFunciones() {
 
             img1.src="http://static0.tiendeo.pe/galeria/poblacion/san-marcos-pedro-galvez/san%20marcos.jpg";
             img2.src="http://www.educacioncajamarca.gob.pe/sites/default/files/San%20Marcos%2003_0.JPG";
-            img3.src="http://www.fotocommunity.de/photo/puente-colgante-san-marcos-cajama-german-marceliano/16404627";
+            img3.src="http://img.fotocommunity.com/puente-colgante-san-marcos-cajamarca-79a49cfa-4f27-407e-a453-9b499e82f8b8.jpg?height=1080";
             img4.src="http://www.munisanmarcos.gob.pe/images/GT/SM/33.jpg";
+
+            imCard1.src="http://2.bp.blogspot.com/_vkd8GXQdrU0/TOMwtQurKUI/AAAAAAAADQk/PZbAUeEX2IQ/s1600/iglesia.JPG"
+            desCard1.innerHTML="Iglesia central"
+            imCard2.src="https://mw2.google.com/mw-panoramio/photos/medium/3006232.jpg"
+            desCard2.innerHTML="Paucamarca"
+            imCard3.src="https://i.ytimg.com/vi/GRaVuiCgFUE/maxresdefault.jpg"
+            desCard3.innerHTML="Danza de los diablos"
+            imgFoot1.src="http://www.costumbresperu.pe/wp-content/uploads/2015/04/150506-sanmarcos-00.jpg"
+            imgFoot2.src="https://mw2.google.com/mw-panoramio/photos/medium/9613444.jpg"
+            imgFoot3.src="http://3.bp.blogspot.com/-OOwUR0xpC2U/UCBy7TkY-xI/AAAAAAAABGk/goKrOKdnz-c/s1600/IMG_4130.JPG"
+            imgFoot4.src="http://www.tourskit.com/cajamarca/foto_rios_maranon_chamaya.jpg"
+            imgFoot1.setAttribute("data-caption","San Isidro")
+            imgFoot2.setAttribute("data-caption","Puente colgante")
+            imgFoot3.setAttribute("data-caption","Ganadería")
+            imgFoot4.setAttribute("data-caption","Encuentro de rios")
+            break;
+        case "cajabamba":
+            title1.innerHTML="Plaza central";
+            title2.innerHTML="Agricultura";
+            title3.innerHTML="Danza";
+            title4.innerHTML="Vista Laguna";
+
+            titled1.innerHTML="Vista de la plaza central";
+            titled2.innerHTML="Agricultura, agri";
+            titled3.innerHTML="Costumbres";
+            titled4.innerHTML="hermosa laguna natural";
+
+            img1.src="https://i.ytimg.com/vi/KnOsSi-9yZY/maxresdefault.jpg";
+            img2.src="http://e.rpp-noticias.io/normal/2016/02/02/112011_73366.jpg";
+            img3.src="http://www.iperu.org/wp-content/uploads/2015/12/danza-diablos-de-cajabamba.jpg";
+            img4.src="http://www.radiocajabamba.pe/imgs/baner.png";
+
+            imCard1.src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db3b7dcd776.jpeg"
+            desCard1.innerHTML="Naturaleza"
+            imCard2.src="http://www.cajamarca-sucesos.com/cajabamba/cajabamba_01.jpg"
+            desCard2.innerHTML="Vista general"
+            imCard3.src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db3b7de8bf2.jpeg"
+            desCard3.innerHTML="Laguna "
+            imgFoot1.src="http://e.rpp-noticias.io/normal/2016/05/20/305030_146735.jpg"
+            imgFoot2.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/02_14.jpg"
+            imgFoot3.src="http://www.cajabambaperu.com/wp-content/uploads/2016/12/SAN-ISIDRO-pampa-grande-cajabamba-peru.jpg"
+            imgFoot4.src="http://www.cajabambaperu.com/wp-content/uploads/2016/12/SAN-ISIDRO-pampa-grande-cajabamba-peru.jpg"
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "chota":
+            title1.innerHTML="Chota";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Catedral_de_Chota.jpg";
+            img2.src="";
+            img3.src="";
+            img4.src="";
 
             imCard1.src=""
             desCard1.innerHTML=""
@@ -99,8 +166,192 @@ function iniciarFunciones() {
             imgFoot2.setAttribute("data-caption","")
             imgFoot3.setAttribute("data-caption","")
             imgFoot4.setAttribute("data-caption","")
+            break;
+        case "contumaza":
+            title1.innerHTML="Contumazá";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
 
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
 
+            img1.src="https://lh6.googleusercontent.com/-_wcBELS9Hw4/TXJRl8pwOXI/AAAAAAAAABY/VqLj-U57Kwc/s1600/2.JPG";
+            img2.src="";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src=""
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "sanpablo":
+            title1.innerHTML="San Paglo";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/san%20pablo_14.jpg";
+            img2.src="";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/san%20pablo_14.jpg"
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "sanmiguel":
+            title1.innerHTML="San Miguel";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="";
+            img2.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/11845194_597383183736279_7912525567684587825_o.jpg";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src=""
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "santacruz":
+            title1.innerHTML="Santa Cruz";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="http://chota.regioncajamarca.gob.pe/sites/default/files/u1/santa%20cruz.jpg";
+            img2.src="";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src="http://chota.regioncajamarca.gob.pe/sites/default/files/u1/santa%20cruz.jpg"
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "sanignacio":
+            title1.innerHTML="San Ignacio";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/provincia-de-san-ignacio-cajamarca-peru.jpg";
+            img2.src="";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src="http://www.regioncajamarca.gob.pe/sites/default/files/noticias/imagenes/provincia-de-san-ignacio-cajamarca-peru.jpg"
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
+            break;
+        case "hualgayoc":
+            title1.innerHTML="Hualgayoc";
+            title2.innerHTML="";
+            title3.innerHTML="";
+            title4.innerHTML="";
+
+            titled1.innerHTML="";
+            titled2.innerHTML="";
+            titled3.innerHTML="";
+            titled4.innerHTML="";
+
+            img1.src="http://photos1.blogger.com/blogger/57/3161/1600/H1.jpg";
+            img2.src="";
+            img3.src="";
+            img4.src="";
+
+            imCard1.src="http://photos1.blogger.com/blogger/57/3161/1600/H1.jpg"
+            desCard1.innerHTML=""
+            imCard2.src=""
+            desCard2.innerHTML=""
+            imCard3.src=""
+            desCard3.innerHTML=""
+            imgFoot1.src=""
+            imgFoot2.src=""
+            imgFoot3.src=""
+            imgFoot4.src=""
+            imgFoot1.setAttribute("data-caption","")
+            imgFoot2.setAttribute("data-caption","")
+            imgFoot3.setAttribute("data-caption","")
+            imgFoot4.setAttribute("data-caption","")
             break;
     }
 
