@@ -14,8 +14,6 @@ function initMap() {
 
 }
 
-location.href="http://www.facebook.com/henry.info";
-
 (function($){
     $(function(){
         $('.button-collapse').sideNav()
